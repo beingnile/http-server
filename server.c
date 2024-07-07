@@ -90,7 +90,7 @@ int main(void)
 
 		nread = recv(sock_fd, buf, BUF_SIZE, 0);
 
-		printf("Received %zd bytes of data from client\n", nread);
+		printf("Received %lu bytes of data from client\n", nread);
 		printf("Data:\n\n");
 		printf("%s\n", buf);
 	}
